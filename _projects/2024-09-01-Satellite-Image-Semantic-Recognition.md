@@ -5,7 +5,7 @@ collection: projects
 category: ai
 permalink: /projects/Satellite_Image_Semantic_Recognition
 excerpt: 'Satellite_Image_Semantic_Recognition ..........'
-date: 2023-04-01
+date: 2024-06-01
 ---
 
 # Semantic Segmentation of Satellite Images for Disaster Road Detection Using Vision Transformer
