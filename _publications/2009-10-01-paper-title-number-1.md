@@ -21,8 +21,8 @@ A simple Cyber Security System written in Golang that can test web system assets
 The project is open source and can be found at: [GitHub Repository](https://github.com/crabin/graduation-design)
 
 ### Project Demonstration:
-{% video https://www.youtube.com/watch?v=0xJkauMfK5I %}
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0xJkauMfK5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ### Functional screenshots:
 
 ![image](cyber_security_system/1.png)
