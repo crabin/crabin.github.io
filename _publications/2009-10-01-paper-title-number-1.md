@@ -23,22 +23,23 @@ The project is open source and can be found at: [GitHub Repository](https://gith
 ### Project Demonstration:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0xJkauMfK5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Functional screenshots:
 
-![image](cyber_security_system/1.png)
+![image](https://github.com/crabin/graduation-design/blob/master/images/1.png)
 
-![image](cyber_security_system/2.png)
+![image](https://github.com/crabin/graduation-design/blob/master/images/2.png)
 
-![image](cyber_security_system/3.png)
+![image](https://github.com/crabin/graduation-design/blob/master/images/3.png)
 
-![image](cyber_security_system/4.png)
+![image](https://github.com/crabin/graduation-design/blob/master/images/4.png)
 
-![image](cyber_security_system/5.png)
+![image](https://github.com/crabin/graduation-design/blob/master/images/5.png)
 
-![image](cyber_security_system/6.png)
+![image](https://github.com/crabin/graduation-design/blob/master/images/6.png)
 
-![image](cyber_security_system/7.png)
+![image](https://github.com/crabin/graduation-design/blob/master/images/7.png)
 
-![image](cyber_security_system/8.png)
+![image](https://github.com/crabin/graduation-design/blob/master/images/8.png)
 
-![image](cyber_security_system/9.png)
+![image](https://github.com/crabin/graduation-design/blob/master/images/9.png)
