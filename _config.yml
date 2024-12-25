@@ -304,6 +304,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
+  - jekyll-embed-video
 
 # Mimic GitHub Pages with --safe
 whitelist:
