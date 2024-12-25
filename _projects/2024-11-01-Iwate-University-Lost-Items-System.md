@@ -1,4 +1,6 @@
 ---
+layout: single
+author_profile: true
 title: "Iwate University Lost Items System"
 collection: projects
 category: web

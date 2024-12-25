@@ -1,4 +1,6 @@
 ---
+layout: single
+author_profile: true
 title: "Satellite Image Semantic Recognition"
 collection: projects
 category: ai

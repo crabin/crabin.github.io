@@ -1,4 +1,6 @@
 ---
+layout: single
+author_profile: true
 title: "Cyber Security System"
 collection: projects
 category: web

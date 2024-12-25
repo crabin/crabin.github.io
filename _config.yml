@@ -295,14 +295,16 @@ defaults:
       layout: talk
       author_profile: true
       share: true
-  # _projects
+
+ # _projects
   - scope:
       path: ""
       type: projects
     values:
-      layout: projects
+      layout: projects  # 这里改为 single
       author_profile: true
       share: true
+
 
 # Sass/SCSS
 sass:
