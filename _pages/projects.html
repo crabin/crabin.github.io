@@ -7,9 +7,19 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.projects reversed %}
-  {% include archive-single-projects.html %}
-{% endfor %}
+<div class="grid__wrapper">
+  {% assign projects_by_category = site.projects | group_by: "category" %}
+  
+  {% for category in site.projects_category %}
+    {% assign category_projects = projects_by_category | where: "name", category[0] | first %}
+    {% if category_projects %}
+      <h2 id="{{ category[0] }}-projects">{{ category[1].title }}</h2>
+      {% for post in category_projects.items reversed %}
+        {% include archive-single-projects.html type="grid" %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+</div>
 
 
 

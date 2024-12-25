@@ -1,12 +1,16 @@
 ---
+title: "Cyber Security System"
 layout: single
 author_profile: true
-title: "Cyber Security System"
+excerpt: 'Cybersecurity vulnerability asset testing website built using Goland'
+permalink: /projects/2023-06-01-Cyber-Security-System-display
 collection: projects
 category: web
-permalink: /projects/2023-06-01-Cyber-Security-System-display
-excerpt: 'Cybersecurity vulnerability asset testing website built using Goland'
 date: 2023-04-01
+header:
+  teaser: "path/to/teaser-image.jpg"  # 可选
+sidebar:
+  nav: "main"  # 添加这行以显示侧边导航
 ---
 
 ## Cyber Security System
