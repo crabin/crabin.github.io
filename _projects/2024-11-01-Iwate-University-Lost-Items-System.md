@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Iwate University Lost Items System"
 collection: projects
 category: web
