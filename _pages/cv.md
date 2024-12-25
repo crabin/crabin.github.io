@@ -39,11 +39,6 @@ Skills
     * Proficient in using [ISAT with Segment Anything](https://github.com/yatengLG/ISAT_with_segment_anything) for data annotation
 
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
 
 Project Experience
 ======
