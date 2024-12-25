@@ -22,12 +22,20 @@ Work experience
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Programming Languages
+  * Java
+  * Go
+  * Python
+  * JavaScript
+* Web Development
+  * Vue.js
+* Cybersecurity
+  * Familiar with penetration testing processes and basic tools
+* Artificial Intelligence
+  * Proficient in data processing using Python
+  * Familiar with cybersecurity datasets such as NSL-KDD and CICIDS 2017
+  * Knowledgeable in machine learning and deep learning algorithms for data classification and recognition
+
 
 Publications
 ======
