@@ -1,6 +1,6 @@
 ---
 title: "Cyber Security System"
-collection: publications
+collection: projects
 category: manuscripts
 permalink: /projects/2009-10-01-paper-title-number-1
 excerpt: 'Cybersecurity vulnerability asset testing website built using Goland'
