@@ -90,6 +90,8 @@ projects_category:
     title: 'Data'
   apps:
     title: 'Apps'
+  ai:
+    title: 'AI'
 
 
 

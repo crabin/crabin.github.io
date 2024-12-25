@@ -2,7 +2,7 @@
 layout: post
 title: "Cyber Security System"
 collection: projects
-category: manuscripts
+category: web
 permalink: /projects/Cyber_Security_System_display
 excerpt: 'Cybersecurity vulnerability asset testing website built using Goland'
 date: 2023-04-01
