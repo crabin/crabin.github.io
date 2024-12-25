@@ -35,6 +35,8 @@ Skills
   * Proficient in data processing using Python
   * Familiar with cybersecurity datasets such as NSL-KDD and CICIDS 2017
   * Knowledgeable in machine learning and deep learning algorithms for data classification and recognition
+  * Experienced in image processing
+    * Proficient in using [ISAT with Segment Anything](https://github.com/yatengLG/ISAT_with_segment_anything) for data annotation
 
 
 Publications
