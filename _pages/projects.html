@@ -7,10 +7,10 @@ author_profile: true
 
 {% include base_path %}
 
-<div class="archive">
+<div class="archive" style="margin: 0; padding: 0;">
   {% assign posts = site.projects | sort: "date" | reverse %}
   {% for post in posts %}
-    {% include archive-single.html %}
+    {% include archive-single.html type="list" %}
   {% endfor %}
 </div>
 
