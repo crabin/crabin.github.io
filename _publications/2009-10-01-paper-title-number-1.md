@@ -4,21 +4,26 @@ collection: publications
 category: manuscripts
 permalink: /publication/2009-10-01-paper-title-number-1
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+date: 2023-04-01
 ---
 
-使用Goland编写一个简单的Cyber Security System，该系统可以测试web系统资产（端口扫描、 目录爆破、XSS语句过滤、IP路由追踪、CMS指纹识别）以及漏洞测试
+## Cyber Security System
 
-项目开源，地址：https://github.com/crabin/graduation-design
+A simple Cyber Security System written in Golang that can test web system assets, including:
 
-**项目演示**：
+- Port scanning
+- Directory brute force
+- XSS statement filtering
+- IP routing trace
+- CMS fingerprint recognition
+- Vulnerability testing
+
+The project is open source and can be found at: [GitHub Repository](https://github.com/crabin/graduation-design)
+
+### Project Demonstration:
 {% video https://www.youtube.com/watch?v=0xJkauMfK5I %}
 
-功能截图：
+### Functional screenshots:
 
 ![image](cyber_security_system/1.png)
 
