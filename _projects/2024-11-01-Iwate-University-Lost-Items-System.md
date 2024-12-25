@@ -18,7 +18,6 @@ date: 2024-11-01
 ![image](lost_items_images/found.png)
 
 
-
 ### QRcode login
 ![image](lost_items_images/QRcode_scan_login.gif)
 ![image](lost_items_images/Scan_sussece.png)
