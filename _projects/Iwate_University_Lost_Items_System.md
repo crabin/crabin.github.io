@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Iwate University Lost Items System"
 collection: projects
 category: manuscripts

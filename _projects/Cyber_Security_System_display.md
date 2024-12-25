@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Cyber Security System"
 collection: projects
 category: manuscripts

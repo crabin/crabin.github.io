@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Satellite Image Semantic Recognition"
 collection: projects
 category: manuscripts
