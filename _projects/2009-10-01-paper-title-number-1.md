@@ -26,20 +26,20 @@ The project is open source and can be found at: [GitHub Repository](https://gith
 
 ### Functional screenshots:
 
-![image](https://github.com/crabin/graduation-design/blob/master/images/1.png)
+![image](https://raw.githubusercontent.com/crabin/graduation-design/refs/heads/master/images/1.png)
 
-![image](https://github.com/crabin/graduation-design/blob/master/images/2.png)
+![image](https://raw.githubusercontent.com/crabin/graduation-design/refs/heads/master/images/2.png)
 
-![image](https://github.com/crabin/graduation-design/blob/master/images/3.png)
+![image](https://raw.githubusercontent.com/crabin/graduation-design/refs/heads/master/images/3.png)
 
-![image](https://github.com/crabin/graduation-design/blob/master/images/4.png)
+![image](https://raw.githubusercontent.com/crabin/graduation-design/refs/heads/master/images/4.png)
 
-![image](https://github.com/crabin/graduation-design/blob/master/images/5.png)
+![image](https://raw.githubusercontent.com/crabin/graduation-design/refs/heads/master/images/5.png)
 
-![image](https://github.com/crabin/graduation-design/blob/master/images/6.png)
+![image](https://raw.githubusercontent.com/crabin/graduation-design/refs/heads/master/images/6.png)
 
-![image](https://github.com/crabin/graduation-design/blob/master/images/7.png)
+![image](https://raw.githubusercontent.com/crabin/graduation-design/refs/heads/master/images/7.png)
 
-![image](https://github.com/crabin/graduation-design/blob/master/images/8.png)
+![image](https://raw.githubusercontent.com/crabin/graduation-design/refs/heads/master/images/8.png)
 
-![image](https://github.com/crabin/graduation-design/blob/master/images/9.png)
+![image](https://raw.githubusercontent.com/crabin/graduation-design/refs/heads/master/images/9.png)
