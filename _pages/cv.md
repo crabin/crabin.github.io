@@ -42,7 +42,7 @@ Skills
 
 Project Experience
 ======
-  <ul>{% for post in site.publications reversed %}
+  <ul>{% for post in site.project reversed %}
     {% include project_experience-cv.html %}
   {% endfor %}</ul>
 
