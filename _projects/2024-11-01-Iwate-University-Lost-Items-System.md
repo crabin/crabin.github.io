@@ -2,7 +2,7 @@
 title: "Iwate University Lost Items System"
 collection: projects
 category: web
-permalink: /projects/Iwate_University_Lost_Items_System
+permalink: /projects/2024-11-01-Iwate-University-Lost-Items-System
 excerpt: 'Iwate University Lost Items System is .....'
 date: 2024-11-01
 ---

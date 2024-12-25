@@ -2,7 +2,7 @@
 title: "Satellite Image Semantic Recognition"
 collection: projects
 category: ai
-permalink: /projects/Satellite_Image_Semantic_Recognition
+permalink: /projects/2024-09-01-Satellite-Image-Semantic-Recognition
 excerpt: 'Satellite_Image_Semantic_Recognition ..........'
 date: 2024-06-01
 ---

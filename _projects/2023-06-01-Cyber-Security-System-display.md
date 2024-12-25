@@ -2,7 +2,7 @@
 title: "Cyber Security System"
 collection: projects
 category: web
-permalink: /projects/Cyber_Security_System_display
+permalink: /projects/2023-06-01-Cyber-Security-System-display
 excerpt: 'Cybersecurity vulnerability asset testing website built using Goland'
 date: 2023-04-01
 ---
