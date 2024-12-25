@@ -1,5 +1,4 @@
 ---
-layout: default
 title: "Cyber Security System"
 collection: projects
 category: web

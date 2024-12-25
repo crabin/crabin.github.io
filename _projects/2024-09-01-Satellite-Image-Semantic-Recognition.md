@@ -1,5 +1,4 @@
 ---
-layout: default
 title: "Satellite Image Semantic Recognition"
 collection: projects
 category: ai
