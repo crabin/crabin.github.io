@@ -12,25 +12,11 @@ author_profile: true
 {% include base_path %}
 
 
-{% if site.projects_category %}
-  {% for category in site.projects_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.projects reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single_projects.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.projects reversed %}
-    {% include archive-single_projects.html %}
-  {% endfor %}
-{% endif %}
+
+{% for post in site.projects reversed %}
+  {% include archive-single-projects.html %}
+{% endfor %}
+
 
 
 
