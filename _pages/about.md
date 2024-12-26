@@ -36,4 +36,4 @@ I am passionate about artificial intelligence and the latest technologies, parti
 
 ### Contact Information
 
-If you are interested in my background and abilities, please feel free to contact me via [contact information or social media links].
+If you are interested in my background and abilities, please feel free to contact me via [LINE ID: lipengbin ].
