@@ -16,6 +16,10 @@ redirect_from:
 
 [project experience](https://crabin.github.io/projects/)
 
+### Personal Blog
+
+[Blog](https://www.cnblogs.com/crabin)
+
 I am currently pursuing a Master's degree at Iwate University Graduate School (enrolled in October 2024). My research focuses on Intrusion Detection Systems (IDS), and I am utilizing data balancing techniques to improve model accuracy by balancing datasets. The methods I use include deep learning algorithms such as `GAN`, `CGAN`, `CWGAN`, `WGAN-GP`, along with the `SOMTE` method.
 
 In my research, combining `CNN_LSTM` with the `SOMTE` method, the classification results on the NSL-KDD 40-class dataset have reached 99%, effectively learning the minority class data. This result highlights the importance of data balancing techniques in improving model performance and provides strong support for further research.
