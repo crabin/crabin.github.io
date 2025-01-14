@@ -26,9 +26,10 @@ Skills
   * Java
   * Go
   * Python
-  * JavaScript
+ 
 * Web Development
   * Vue.js
+  * JavaScript
 * Cybersecurity
   * Familiar with penetration testing processes and basic tools
 * Artificial Intelligence
