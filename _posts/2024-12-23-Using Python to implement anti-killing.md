@@ -6,7 +6,7 @@ tags:
   - python
   - cybersecurity
 ---
-# 用 Python 实现免杀
+## 用 Python 实现免杀
 
 被命名为“火焰”（Flame）的恶意软件，在用被称为 Beetlejuice、Microbe、Frog、Snack 和 Gator 的 Lua 脚本编译后，该恶意软件可以通过蓝牙标识出被其侵入的计算机、秘密录音，入侵附近的计算机并往远程命令和控制服务器上传屏幕截图和数据。大多数杀毒引擎仍在使用基于特征码的检测作为主要的检测手段。
 
