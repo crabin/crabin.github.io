@@ -3,11 +3,11 @@ title: 'Penetration Testing with Python'
 date: 2024-08-14
 permalink: /posts/2024/08/Penetration Testing with Python/
 tags:
-  - cool posts
-  - category1
-  - category2
+  - python
+  - cybersecurity
+  - penetration testing
 ---
-# 第 2 章 用 Python 进行渗透测试
+# 用 Python 进行渗透测试
 
 ## 编写一个端口扫描器
 
