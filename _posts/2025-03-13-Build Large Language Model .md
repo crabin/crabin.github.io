@@ -1,9 +1,9 @@
 
 
 ```
-title: '阅读图书Build Large Language Model'
+title: 'Build Large Language Model'
 date: 2025-03-13
-permalink: /posts/2025/3/阅读图书Build Large Language Model/
+permalink: /posts/2025/3/Build Large Language Model/
 tags:
 
   - python
