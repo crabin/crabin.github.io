@@ -1,6 +1,6 @@
 
 
-```
+---
 title: 'Build Large Language Model'
 date: 2025-03-13
 permalink: /posts/2025/3/Build Large Language Model/
@@ -10,7 +10,7 @@ tags:
   - pytorch
   - attention
   - LLM
-```
+---
 
 
 
