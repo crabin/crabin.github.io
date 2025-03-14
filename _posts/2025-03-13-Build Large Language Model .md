@@ -1,11 +1,12 @@
 ---
-title: 'Attention mechanism'
-date: 2025-01-13
-permalink: /posts/2025/1/Attention mechanism/
+title: 'Build Large Language Model'
+date: 2025-03-13
+permalink: /posts/2025/3/Build Large Language Model/
 tags:
   - python
   - pytorch
   - attention
+  - LLM
 ---
 
 
