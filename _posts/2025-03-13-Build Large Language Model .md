@@ -13,6 +13,7 @@ tags:
 
 # 阅读图书Build Large Language Model
 
+[查看Notion版本的发布网站](https://moored-dumpling-e31.notion.site/Build-Large-Language-Model-196f92fc811b80e08946e8938d1bc28e)
 
 
 日期: 2025年2月9日 → 2025年2月28日
