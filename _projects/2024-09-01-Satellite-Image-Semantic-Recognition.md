@@ -226,4 +226,13 @@ GPU | RTX 4090D |
 ## 项目总结
 本研究提出一种基于 **Vision Transformer + LoRA 参数高效微调** 的遥感语义分割框架，在保持高精度的同时大幅降低训练成本与计算需求，在高分辨率卫星图像任务中实现性能与效率的最佳平衡，为灾害应急分析与城市规划提供可靠技术支撑。
 
+## 展示
+使用的标签数据：
+![image](Statellite_images/label.png)
+
+![image](Statellite_images/train_image_label.png)
+
+训练结果：
+![image](Statellite_images/train_result.png)
+
 ---
