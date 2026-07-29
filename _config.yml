@@ -7,11 +7,11 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "en-US"
-title                    : "LI's personal homepage"
+locale                   : "zh-CN"
+title                    : "李鹏斌 · Pengbin Li"
 title_separator          : "-"
-name                     : &name "LI PENGBIN"
-description              : &description "Welcome to my personal homepage"
+name                     : &name "Pengbin Li"
+description              : &description "AI Agent 开发工程师，专注智能体系统、RAG 评测、AI 安全与应用型深度学习。"
 url                      : https://crabin.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "crabin/crabin.github.io"
@@ -22,11 +22,11 @@ repository               : "crabin/crabin.github.io"
 author:
   # Biographic information
   avatar           : "profile2.png"
-  name             : "LI PENGBIN"
+  name             : "Pengbin Li · 李鹏斌"
   pronouns         : # example: "she/her"  
-  bio              : "I have a passion for programming and enjoy playing basketball and working out."
-  location         : "JAPAN"
-  employer         : "Iwate University"
+  bio              : "AI Agent 工程、RAG 评测、AI 安全与应用型深度学习。"
+  location         : "Japan"
+  employer         : "Iwate University · 岩手大学"
   uri              : # URL
   email            : "cralpbin@gmail.com" 
 
@@ -327,7 +327,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
-  - jekyll-embed-video
 
 # Mimic GitHub Pages with --safe
 whitelist:

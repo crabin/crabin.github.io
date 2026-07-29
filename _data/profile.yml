@@ -1,0 +1,226 @@
+en:
+  identity:
+    name: "Pengbin Li"
+    native_name: "李鹏斌"
+    eyebrow: "AI Agent Engineer · Applied AI Researcher"
+    headline: "I build agent systems that turn research, retrieval, tools, and safety constraints into working products."
+    summary: >-
+      Master's student at Iwate University working at the intersection of AI agents,
+      retrieval-augmented generation, cybersecurity, and deep learning. I move from
+      problem framing and experiments to backend implementation, evaluation, observability,
+      and production-oriented delivery.
+    location: "Japan"
+    status: "Open to AI Agent, applied AI, and AI security opportunities"
+    primary_cta: "View selected projects"
+    secondary_cta: "Read full CV"
+  labels:
+    overview: "Profile"
+    impact: "Selected impact"
+    capabilities: "What I build"
+    skills: "Capability matrix"
+    experience: "Experience"
+    education: "Education"
+    projects: "Selected projects"
+    projects_intro: "Six projects that show how I approach agent orchestration, RAG quality, safety, evaluation, and applied deep learning."
+    statement: "How I work"
+    contact: "Contact"
+    all_projects: "Explore all project case studies"
+    source_cv: "Source CV"
+    current: "Present"
+    github: "GitHub"
+    details: "Project details"
+    view_case: "View case study"
+    view_skills: "View the full capability matrix"
+    download_cv: "Download source CV"
+    contact_me: "Contact me"
+  metrics:
+    - value: "116"
+      label: "real agent evaluation cases"
+      note: "126 turns; 100% pass across the latest full evaluation"
+    - value: "93.3%"
+      label: "RAG Top-1 accuracy"
+      note: "up from 53.3%; Top-K reached 100%"
+    - value: "98.7%"
+      label: "first-feedback latency reduction"
+      note: "0.4145s → 0.0052s in a slow-search simulation"
+    - value: "96★"
+      label: "open-source validation"
+      note: "Paper Humanizer Skill on GitHub at CV publication time"
+  capabilities:
+    - number: "01"
+      title: "Agent systems"
+      body: "Design stateful single- and multi-agent workflows with planning, memory, tool routing, reflection, human handoff, and long-running task control."
+      tags: ["LangGraph", "LangChain", "Deep Agents", "Harness", "Multi-Agent"]
+    - number: "02"
+      title: "RAG quality & evaluation"
+      body: "Build retrieval pipelines with query rewriting, filtering, reranking, evidence sufficiency checks, citations, offline metrics, trace-based regression, and graceful fallback paths."
+      tags: ["ChromaDB", "pgvector", "Elasticsearch", "Neo4j", "Golden Sets"]
+    - number: "03"
+      title: "AI × security"
+      body: "Apply LLMs and generative models to authorized security assessment, intrusion detection, vulnerability research, guardrails, sandboxing, and auditable execution."
+      tags: ["Security Agents", "IDS", "RAG", "Docker", "Observability"]
+  skill_groups:
+    - title: "Agent engineering"
+      items:
+        - "Prompt engineering, task planning, memory, tool use, multi-agent collaboration"
+        - "LangChain / LangGraph state machines, routing, reflection, bounded iteration"
+        - "Evaluation harnesses, fixtures, graders, trace analysis, regression testing"
+        - "Claude Code and Codex for end-to-end AI-assisted development"
+    - title: "AI & data"
+      items:
+        - "PyTorch, Transformers, Hugging Face, Scikit-learn, Keras"
+        - "GAN, AutoEncoder, CNN, RNN, LSTM, GRU, ViT, LoRA"
+        - "Feature selection, encoding, normalization, imbalanced-data handling, time-series modeling"
+        - "OpenCV, preprocessing, semantic segmentation, object detection"
+    - title: "Software engineering"
+      items:
+        - "Python, Java, Go, C/C++, TypeScript"
+        - "Spring Boot, FastAPI, Vue 3, MySQL, SQLite"
+        - "Linux, Git, Docker, Redis, Kafka, MinIO"
+        - "API design, backend services, integration, deployment, debugging"
+  experience:
+    - company: "Hunan Kechuang Information Technology Co., Ltd."
+      role: "Java Development Engineer"
+      date: "Jul 2023 – Nov 2023"
+      summary: >-
+        Contributed to Changsha's municipal procurement system with Java, Spring Boot,
+        and MySQL. Implemented backend APIs and data-processing logic, including multi-format
+        tender-document parsing, key-information extraction, and search; also participated in
+        requirements analysis, testing, and defect resolution.
+  education:
+    - school: "Iwate University · Japan"
+      degree: "M.S. candidate, Design and Media Engineering"
+      date: "Oct 2024 – Present"
+      facts:
+        - "University scholarship · GPA 3.2/4.0"
+        - "Coursework: computer vision, integrated design, computer network systems, computer animation, design representation, image synthesis"
+        - "Research: GAN-based intrusion detection using synthetic and real traffic data to improve generalization and adversarial robustness"
+    - school: "Central South University of Forestry and Technology · China"
+      degree: "B.Sc., Information and Computing Science"
+      date: "Sep 2019 – Jun 2023"
+      facts:
+        - "GPA 3.0/5.0"
+        - "Coursework: Java/C/C++/Python, MySQL, computer organization, operating systems, algorithms, data structures, information security, data visualization, software engineering"
+  statement:
+    - "I am problem-driven: I decompose ambiguous goals, define measurable checkpoints, and iterate from a working baseline toward a reliable system."
+    - "I enjoy using new development paradigms and AI coding tools to validate ideas quickly, but I care equally about tests, evidence, safety boundaries, and maintainable engineering."
+    - "Basketball has reinforced how I think about collaboration: clear roles, fast feedback, shared context, and sustained execution matter as much as individual skill."
+  contact:
+    email: "cralpbin@gmail.com"
+    github: "https://github.com/crabin"
+    blog: "https://www.cnblogs.com/crabin"
+    homepage: "https://crabin.github.io/"
+    phone_cn: "+86 156 7386 8311"
+    phone_jp: "+81 70 8536 2519"
+
+zh:
+  identity:
+    name: "李鹏斌"
+    native_name: "Pengbin Li"
+    eyebrow: "AI Agent 开发工程师 · 应用型 AI 研究者"
+    headline: "把研究、检索、工具与安全边界，组合成真正可运行的智能体系统。"
+    summary: >-
+      岩手大学硕士研究生，主要关注 AI Agent、检索增强生成、网络安全与深度学习的交叉应用。
+      能够从问题定义、方案设计和实验验证推进到后端实现、评测体系、可观测性与工程交付，
+      重视系统效果，也重视证据、边界和长期可维护性。
+    location: "日本"
+    status: "关注 AI Agent、应用型 AI 与 AI 安全相关机会"
+    primary_cta: "查看代表项目"
+    secondary_cta: "阅读完整简历"
+  labels:
+    overview: "个人定位"
+    impact: "代表性成果"
+    capabilities: "核心方向"
+    skills: "能力矩阵"
+    experience: "工作经历"
+    education: "教育背景"
+    projects: "代表项目"
+    projects_intro: "六个项目集中展示我在智能体编排、RAG 质量、安全控制、评测体系与深度学习应用方面的实践。"
+    statement: "工作方式"
+    contact: "联系方式"
+    all_projects: "查看全部项目案例"
+    source_cv: "原始简历"
+    current: "至今"
+    github: "GitHub"
+    details: "项目详情"
+    view_case: "查看完整案例"
+    view_skills: "查看完整能力矩阵"
+    download_cv: "下载原始简历"
+    contact_me: "联系我"
+  metrics:
+    - value: "116"
+      label: "真实 Agent 评测用例"
+      note: "覆盖 126 个 turn，最近一次全量评测核心指标均为 100%"
+    - value: "93.3%"
+      label: "RAG Top-1 命中率"
+      note: "由 53.3% 提升，Top-K 达到 100%"
+    - value: "98.7%"
+      label: "首反馈延迟下降"
+      note: "慢搜索模拟中由 0.4145s 降至 0.0052s"
+    - value: "96★"
+      label: "开源项目验证"
+      note: "简历发布时 Paper Humanizer Skill 的 GitHub Stars"
+  capabilities:
+    - number: "01"
+      title: "智能体系统"
+      body: "设计具备任务规划、长期记忆、工具路由、反思补查、人工接管与长任务控制能力的单 Agent / 多 Agent 工作流。"
+      tags: ["LangGraph", "LangChain", "Deep Agents", "Harness", "Multi-Agent"]
+    - number: "02"
+      title: "RAG 质量与评测"
+      body: "构建包含查询改写、过滤、重排、证据充分性判断、引用追踪、离线指标、Trace 回归与降级机制的检索链路。"
+      tags: ["ChromaDB", "pgvector", "Elasticsearch", "Neo4j", "Golden Set"]
+    - number: "03"
+      title: "AI × 网络安全"
+      body: "将大模型与生成模型应用到授权安全评估、入侵检测、漏洞研究、安全围栏、沙箱执行与可审计工作流。"
+      tags: ["安全智能体", "IDS", "RAG", "Docker", "可观测性"]
+  skill_groups:
+    - title: "Agent 工程"
+      items:
+        - "Prompt Engineering、任务规划、记忆、工具调用与多智能体协作"
+        - "LangChain / LangGraph 状态机、路由、反思与有界迭代"
+        - "评测 Harness、Fixture、Grader、Trace 分析与回归测试"
+        - "使用 Claude Code、Codex 完成 AI 辅助全流程开发"
+    - title: "AI 与数据"
+      items:
+        - "PyTorch、Transformers、Hugging Face、Scikit-learn、Keras"
+        - "GAN、AutoEncoder、CNN、RNN、LSTM、GRU、ViT、LoRA"
+        - "特征选择、编码、归一化、类别不平衡处理、时序建模"
+        - "OpenCV、图像预处理、语义分割、目标检测"
+    - title: "软件工程"
+      items:
+        - "Python、Java、Go、C/C++、TypeScript"
+        - "Spring Boot、FastAPI、Vue 3、MySQL、SQLite"
+        - "Linux、Git、Docker、Redis、Kafka、MinIO"
+        - "接口设计、后端服务、系统联调、部署与问题排查"
+  experience:
+    - company: "湖南科创信息技术股份有限公司"
+      role: "Java 开发工程师"
+      date: "2023.07 – 2023.11"
+      summary: >-
+        参与长沙市政府采购系统开发，基于 Java、Spring Boot 和 MySQL 完成后台接口与数据处理逻辑，
+        实现标书多格式解析、关键信息抽取与检索功能，并参与需求分析、测试和问题修复。
+  education:
+    - school: "岩手大学 · 日本"
+      degree: "设计与媒体工学 硕士研究生"
+      date: "2024.10 – 至今"
+      facts:
+        - "校级奖学金 · GPA 3.2/4.0"
+        - "主修：计算机视觉、融合设计、计算机网络系统、计算机动画、图像设计表现、图像合成"
+        - "研究：使用 GAN 生成合成流量并与真实数据融合，用于提升入侵检测系统的泛化能力与对抗攻击防御能力"
+    - school: "中南林业科技大学 · 中国"
+      degree: "信息与计算科学 学士"
+      date: "2019.09 – 2023.06"
+      facts:
+        - "GPA 3.0/5.0"
+        - "主修：Java/C/C++/Python、MySQL、计算机组成原理、操作系统、算法、数据结构、信息安全、大数据可视化、软件工程"
+  statement:
+    - "我偏问题驱动：先拆解模糊目标，定义可验证的阶段结果，再从可运行基线持续迭代到更可靠的系统。"
+    - "我喜欢使用新的开发范式和 AI 编程工具快速验证想法，但同样重视测试、证据、安全边界与可维护的工程实现。"
+    - "篮球让我更加重视协作中的角色分工、快速反馈、共享上下文与持续投入——这些往往和个人能力同样重要。"
+  contact:
+    email: "cralpbin@gmail.com"
+    github: "https://github.com/crabin"
+    blog: "https://www.cnblogs.com/crabin"
+    homepage: "https://crabin.github.io/"
+    phone_cn: "+86 156 7386 8311"
+    phone_jp: "+81 70 8536 2519"

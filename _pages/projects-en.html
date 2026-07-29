@@ -1,0 +1,39 @@
+---
+layout: career
+permalink: /en/projects/
+title: "Projects · Pengbin Li"
+excerpt: "Selected AI Agent, RAG, AI security, and deep-learning projects by Pengbin Li."
+lang: en
+alternate_url: /projects/
+---
+
+{% assign profile = site.data.profile.en %}
+<header class="career-page-header">
+  <div>
+    <span class="career-kicker">AI AGENTS · RAG · SECURITY · APPLIED AI</span>
+    <h1>{{ profile.labels.projects }}</h1>
+    <p>{{ profile.labels.projects_intro }}</p>
+    <div class="career-actions">
+      <a class="career-button career-button--primary" href="/en/cv/">View full CV</a>
+      <a class="career-button career-button--secondary" href="#contact">Contact me</a>
+    </div>
+  </div>
+  <a class="career-language" href="/projects/" hreflang="zh-CN">中文 · ZH</a>
+</header>
+
+{% include project-portfolio.html detailed=true %}
+
+<section id="contact" class="career-section career-section--project-contact">
+  <div class="career-section__heading">
+    <span>07</span>
+    <h2>Start a conversation</h2>
+  </div>
+  <div class="career-contact-panel">
+    <p>If you are building in AI agents, RAG, AI security, or applied AI, you can review my full CV or contact me directly.</p>
+    <div class="career-actions">
+      <a class="career-button career-button--primary" href="mailto:{{ profile.contact.email }}">Send an email</a>
+      <a class="career-button career-button--secondary" href="/en/cv/">View CV</a>
+      <a class="career-button career-button--secondary" href="{{ profile.contact.github }}" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+</section>

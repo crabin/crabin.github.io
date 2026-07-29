@@ -1,20 +1,41 @@
 ---
-layout: archive
-title: "Projects"
+layout: career
 permalink: /projects/
-author_profile: true
+title: "项目 · 李鹏斌"
+excerpt: "李鹏斌在 AI Agent、RAG、AI 安全和深度学习方面的代表项目。"
+lang: zh
+alternate_url: /en/projects/
+redirect_from:
+  - /zh/projects/
 ---
 
-{% include base_path %}
+{% assign profile = site.data.profile.zh %}
+<header class="career-page-header">
+  <div>
+    <span class="career-kicker">AI AGENT · RAG · 网络安全 · 应用型 AI</span>
+    <h1>{{ profile.labels.projects }}</h1>
+    <p>{{ profile.labels.projects_intro }}</p>
+    <div class="career-actions">
+      <a class="career-button career-button--primary" href="/cv/">查看完整简历</a>
+      <a class="career-button career-button--secondary" href="#contact">联系我</a>
+    </div>
+  </div>
+  <a class="career-language" href="/en/projects/" hreflang="en">EN · English</a>
+</header>
 
-<div class="archive" style="margin: 0; padding: 0;">
-  {% assign posts = site.projects | sort: "date" | reverse %}
-  {% for post in posts %}
-    {% include archive-single.html type="list" %}
-  {% endfor %}
-</div>
+{% include project-portfolio.html detailed=true %}
 
-
-
-
-
+<section id="contact" class="career-section career-section--project-contact">
+  <div class="career-section__heading">
+    <span>07</span>
+    <h2>继续交流</h2>
+  </div>
+  <div class="career-contact-panel">
+    <p>如果你正在寻找 AI Agent、RAG、AI 安全或应用型 AI 方向的合作伙伴，欢迎查看完整简历或直接联系我。</p>
+    <div class="career-actions">
+      <a class="career-button career-button--primary" href="mailto:{{ profile.contact.email }}">发送邮件</a>
+      <a class="career-button career-button--secondary" href="/cv/">查看简历</a>
+      <a class="career-button career-button--secondary" href="{{ profile.contact.github }}" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,158 @@
+- key: trip-planner
+  order: 1
+  date_en: "Jun 2026"
+  date_zh: "2026.06"
+  title_en: "Trip Planner · AI Travel Planning System"
+  title_zh: "Trip Planner｜AI 旅行规划系统"
+  github: "https://github.com/crabin/Trip_Planner"
+  stack: ["Vue 3", "TypeScript", "FastAPI", "LangGraph", "ChromaDB", "Redis", "SQLite", "RAG"]
+  summary_en: >-
+    A Chinese-language AI travel planning product that connects fast itinerary generation,
+    deep destination research, conversational editing, maps and weather enrichment,
+    history management, and Markdown/PDF export into one continuous workflow.
+  summary_zh: >-
+    面向中文用户的 AI 旅行规划系统，将快速行程生成、目的地深度研究、浮动聊天助手、地图与天气增强、
+    历史管理以及 Markdown/PDF 导出组合为完整闭环。
+  highlights_en:
+    - "Built a Destination Intelligence agent with chapter planning, web research, evidence synthesis, reflection, and source tracing. Across 8 real reports it averaged 5 sections, about 103 sources, 84 unique URLs, and 33 minutes, with 8/8 saved-result completion."
+    - "Created a Report Itinerary agent that converts long-form Markdown and historical reports into frontend-ready itineraries through section chunking, structured extraction, quality gates, cache fingerprints, and resumable execution."
+    - "Designed an Ask / Search / Research / Update LangGraph chatbot with itinerary Q&A, live destination queries, multi-step research, comparison, risk checks, and natural-language itinerary updates."
+    - "Implemented scoped long-term memory in SQLite and a Chroma-to-keyword fallback path for semantic, episodic, and perceptual memory operations."
+    - "Improved offline RAG Top-1 accuracy from 53.3% to 93.3%, Top-K to 100%, and reduced cross-destination contamination from 17 chunks to zero."
+    - "Added Redis-backed caching for RAG, maps, geocoding, route estimation, and weather, with graceful degradation when Redis is unavailable."
+    - "Built a tau3-style evaluation harness. The latest real-LLM, real-tool run covered 116 cases and 126 turns with 100% case pass, turn pass, intent accuracy, tool-action match, and high-risk pass."
+    - "Reduced first feedback latency from 0.4145s to 0.0052s in slow-search simulation through SSE streaming, a 98.7% improvement."
+  highlights_zh:
+    - "设计 Destination Intelligence 深度规划 Agent，包含章节规划、联网检索、证据总结、反思补查和来源追踪；8 份真实报告平均生成 5 个章节、约 103 条来源、84 个独立 URL，平均耗时约 33 分钟，保存产物完成率 8/8。"
+    - "实现 Report Itinerary Agent，通过章节切块、LLM 结构化抽取、质量门控、缓存指纹和断点续跑，将深度规划 Markdown / 历史报告转换为前端可消费的 itinerary。"
+    - "基于 LangGraph 构建 Ask / Search / Research / Update 多分支聊天状态机，支持行程问答、实时查询、多步骤研究、方案比较、风险核查和自然语言改行程。"
+    - "使用 SQLite 构建带 session / trip 作用域的长期记忆系统，并在 Chroma 不可用时自动降级为关键词检索。"
+    - "优化 RAG 检索链路，离线消融中 Top-1 命中率由 53.3% 提升至 93.3%，Top-K 达到 100%，跨目的地污染片段由 17 降至 0。"
+    - "为 RAG、地图、地理编码、路线估算和天气查询接入 Redis 缓存，并设计 Redis 不可用时的优雅降级。"
+    - "参考 tau3-style harness 建立评测与回归体系；最近一次 real LLM + real tools 全量评测覆盖 116 个 case、126 个 turn，核心指标均达到 100%。"
+    - "通过 SSE 流式响应将慢搜索模拟中的首反馈平均延迟由 0.4145s 降至 0.0052s，下降约 98.7%。"
+
+- key: super-agent-java
+  order: 2
+  date_en: "Jun – Jul 2026"
+  date_zh: "2026.06 – 2026.07"
+  title_en: "Enterprise Java AI Agent Platform Enhancement"
+  title_zh: "企业级 Java AI Agent 平台二次开发"
+  github: "https://github.com/crabin/super-agent-java"
+  stack: ["Java", "Spring AI Alibaba", "RAG", "Neo4j", "Redis", "Kafka", "pgvector", "Elasticsearch"]
+  summary_en: >-
+    Extended java-up-up/super-agent with production-oriented capabilities for tool extensibility,
+    RAG evaluation, retrieval closure, security, observability, and citation traceability.
+  summary_zh: >-
+    基于 java-up-up/super-agent 持续优化，在保留企业级 Agent、RAG、文档治理与管理后台能力的基础上，
+    补齐工具扩展、检索闭环、评测、安全、可观测性与引用追踪能力。
+  highlights_en:
+    - "Designed a pluggable enterprise Tool Registry around Spring AI Alibaba ReactAgent, including MCP adapters, enable/disable controls, timeout, quotas, audit, and fallback behavior."
+    - "Built an offline RAG evaluation suite using historical traces and human golden sets to measure Recall@K, MRR, nDCG, citation hit rate, and latency across retrieval, reranking, and prompt variants."
+    - "Added bounded iterative retrieval: evidence sufficiency check → query completion → second retrieval → evidence merge, limited to one retry and verified through traces and offline evaluation."
+    - "Introduced prompt-injection defenses and citation-consistency checks for RAG and web-search evidence, isolating external content from executable instructions and enabling answer-to-source backtracking."
+  highlights_zh:
+    - "基于 Spring AI Alibaba ReactAgent 设计可插拔企业级 Tool Registry，并接入 MCP Adapter、工具启停、超时、配额、审计与异常降级。"
+    - "使用历史 Trace 与人工 golden set 构建 RAG 离线评测，覆盖 Recall@K、MRR、nDCG、引用命中率和耗时，支持检索、重排与 Prompt 版本对比。"
+    - "增加最多一次的有界迭代检索闭环：证据充分性判断 → 查询补全 → 二次召回 → 证据合并，并通过 Trace 与离线评测验证效果。"
+    - "为 RAG 与联网搜索增加 Prompt Injection 防护和引用一致性校验，实现外部证据不可执行隔离、风险检测与答案引用回溯。"
+
+- key: myagent
+  order: 3
+  date_en: "May – Jun 2026"
+  date_zh: "2026.05 – 2026.06"
+  title_en: "MyAgent · Defensive Security Assessment Agent"
+  title_zh: "MyAgent｜防御性安全评估智能体"
+  github: "https://github.com/crabin/MyAgent"
+  stack: ["TypeScript", "Node.js", "PI Agent", "CLI/TUI", "Multi-Agent", "Security Guardrails", "Vitest"]
+  summary_en: >-
+    A PI Agent-based CLI/TUI system enhanced with authorized defensive-security subagents,
+    scoped execution, security memory, multi-stage planning, and report generation.
+  summary_zh: >-
+    基于 PI Agent 二次开发的 TypeScript CLI/TUI 智能体，在代码、命令、会话和多模型能力之上，
+    新增面向授权防御性安全评估的子代理、范围控制、长期记忆和报告能力。
+  highlights_en:
+    - "Injected security-mode prompts, tools, and contextual memory when security intent is detected at session startup."
+    - "Required explicit target assets, allowed actions, authorization purpose, and expiry before active checks can run."
+    - "Split work into asset discovery, attack-surface analysis, PoC research, risk assessment, remediation, and reporting, controlled by step and iteration plans."
+    - "Added Asset Discovery, Attack Surface Analysis, and PoC Research subagents for baselining, exposure analysis, and vulnerability-source normalization."
+    - "Expanded tools for passive intelligence, constrained crawling, CVE/NVD/Exploit-DB/MITRE normalization, security memory, web analysis, and Markdown/JSON reports."
+    - "Covered intent recognition, authorization expiry, tool registration, memory persistence, delegation, human confirmation, and report generation with Vitest."
+  highlights_zh:
+    - "在会话启动链路中识别安全请求，并动态注入安全模式 Prompt、工具集和上下文记忆。"
+    - "要求用户明确目标资产、允许动作、授权目的和有效期限后，才允许执行主动验证。"
+    - "将任务拆分为资产发现、攻击面分析、PoC 研究、风险评估、修复建议和报告生成，并通过 step / iteration plan 控制边界。"
+    - "扩展 Asset Discovery、Attack Surface Analysis、PoC Research 三个专用子代理。"
+    - "增强被动情报、受限爬取、CVE/NVD/Exploit-DB/MITRE 归一化、安全记忆、网页分析与 Markdown/JSON 报告工具。"
+    - "使用 Vitest 覆盖意图识别、授权过期、工具注册、记忆持久化、委派、人工确认和报告生成。"
+
+- key: paper-humanizer
+  order: 4
+  date_en: "Jan 2026"
+  date_zh: "2026.01"
+  title_en: "Paper Humanizer Skill"
+  title_zh: "Paper Humanizer Skill｜中英文学术文本人性化润色工具"
+  github: "https://github.com/crabin/paper-humanizer-skill"
+  stack: ["Claude Code Skill", "Python CLI", "Prompt Engineering"]
+  summary_en: >-
+    An open-source bilingual academic-writing tool that reduces formulaic AI writing patterns
+    while preserving facts, numbers, citations, conclusions, and domain terminology.
+  summary_zh: >-
+    面向中英文学术写作的 Claude Code Skill / Python CLI，在严格保护事实、数据、引用、结论和专业术语的前提下，
+    弱化模板化 AI 写作痕迹，提升自然度与投稿可读性。
+  highlights_en:
+    - "Designed bilingual academic-revision prompts, user templates, tone configuration, and a standardized four-part output."
+    - "Created an AI-pattern phrase blacklist to reduce templated wording without flattening domain-specific style."
+    - "Added strict factual-preservation constraints to prevent revision-induced distortion."
+    - "Published a Python CLI and example data for batch processing and standardized prompt generation; reached 96 GitHub stars at CV publication time."
+  highlights_zh:
+    - "设计中英文学术润色 Prompt、用户模板、语气配置与四段式标准输出。"
+    - "构建 AI 痕迹短语黑名单，降低模板化表达。"
+    - "加入严格事实保护约束，避免数值、结论、引用和专业术语在润色中失真。"
+    - "提供 Python CLI 与示例数据，支持批处理和标准化 Prompt 生成；简历发布时 GitHub Stars 为 96。"
+
+- key: autopentest-xl
+  order: 5
+  date_en: "Jan – Feb 2026"
+  date_zh: "2026.01 – 2026.02"
+  title_en: "AutoPentest-XL · Autonomous Multi-Agent Pentest Platform"
+  title_zh: "AutoPentest-XL｜自主渗透测试多 Agent 平台"
+  github: "https://github.com/crabin/AutoPentest-XL"
+  stack: ["Python", "LangGraph", "LangChain", "ChromaDB", "Neo4j", "Docker", "Scapy"]
+  summary_en: >-
+    An authorized security-testing platform using a PDEF loop—Perception, Decision,
+    Execution, Feedback—to coordinate reconnaissance, vulnerability analysis, exploitation,
+    privilege escalation, and post-failure reflection.
+  summary_zh: >-
+    面向授权渗透测试的自主化平台，基于 PDEF（感知—决策—执行—反馈）闭环组织资产侦察、漏洞分析、
+    利用尝试、权限提升与失败反思，并结合 RAG、图状态与安全围栏提升执行效率和可控性。
+  highlights_en:
+    - "Modeled Commander, Scanner, Exploiter, Privesc, and Reviewer roles in LangGraph with reflection retries, context compression, dynamic routing, and human takeover."
+    - "Combined ChromaDB for tool and vulnerability knowledge with Neo4j for topology, attack paths, and long-term memory, supporting CVE retrieval and GTFOBins mapping."
+    - "Implemented CIDR boundary checks, dangerous-command blocking, reviewer approval, and Docker isolation so actions remain within authorized scope."
+    - "Added faithfulness grading, OpenTelemetry, and Prometheus monitoring for token cost, execution time, and exploit success rate."
+  highlights_zh:
+    - "基于 LangGraph + PentestState 解耦 Commander / Scanner / Exploiter / Privesc / Reviewer，并支持反射重试、上下文压缩、动态路由和人工接管。"
+    - "使用 ChromaDB 存储工具规范与漏洞知识，Neo4j 维护拓扑、攻击路径与长期记忆，支持 CVE 检索和 GTFOBins 映射。"
+    - "通过 CIDR 越界校验、危险命令拦截、Reviewer 审核和 Docker 隔离，确保执行限定在授权范围。"
+    - "引入忠实度评估、OpenTelemetry 与 Prometheus，监控 Token、耗时和利用成功率。"
+
+- key: satellite-segmentation
+  order: 6
+  date_en: "Aug – Sep 2024"
+  date_zh: "2024.08 – 2024.09"
+  title_en: "Sendai Satellite Image Semantic Segmentation"
+  title_zh: "日本仙台市城市卫星图像语义分割"
+  site: "/projects/2024-09-01-Satellite-Image-Semantic-Recognition.html"
+  stack: ["Python", "PyTorch", "Vision Transformer", "LoRA", "OpenCV"]
+  summary_en: >-
+    Applied ViT and LoRA fine-tuning to high-resolution satellite imagery from Sendai,
+    identifying roads, vegetation, buildings, and vehicles for urban planning and
+    post-disaster emergency analysis.
+  summary_zh: >-
+    使用 Python、PyTorch、ViT 与 OpenCV 处理仙台市卫星图像，通过 LoRA 微调完成高分辨率语义分割，
+    识别道路、植被、建筑和车辆，为城市规划和灾后应急分析提供支持。
+  highlights_en:
+    - "Built the data preprocessing, annotation, augmentation, fine-tuning, and semantic-segmentation workflow for a practical remote-sensing scenario."
+  highlights_zh:
+    - "完成面向真实遥感场景的数据预处理、标注、增强、微调与语义分割流程。"
