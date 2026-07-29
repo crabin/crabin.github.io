@@ -29,7 +29,13 @@
 
 <ul>
   {% for metric in profile.metrics %}
-    <li><strong>{{ metric.value }} · {{ metric.label }}</strong><br>{{ metric.note }}</li>
+    <li>
+      {% if metric.url %}
+        <a href="{{ metric.url }}" rel="noopener"><strong>{{ metric.value }} · {{ metric.label }}</strong></a><br>{{ metric.note }}
+      {% else %}
+        <strong>{{ metric.value }} · {{ metric.label }}</strong><br>{{ metric.note }}
+      {% endif %}
+    </li>
   {% endfor %}
 </ul>
 
