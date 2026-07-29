@@ -1,36 +1,34 @@
 {% assign lang = page.lang | default: 'zh' %}
+{% assign profile = site.data.profile[lang] %}
 {% assign is_zh = false %}
 {% if lang == 'zh' %}{% assign is_zh = true %}{% endif %}
-{% assign profile = site.data.profile[lang] %}
 
-<div class="career-projects career-projects--detailed">
-  {% for project in site.data.portfolio_projects %}
-    <article class="career-project-card career-project-card--detailed" id="{{ project.key }}">
-      <div class="career-project-card__meta">
-        <span>{% if is_zh %}{{ project.date_zh }}{% else %}{{ project.date_en }}{% endif %}</span>
-        <span>0{{ project.order }}</span>
-      </div>
-      <h3>{% if is_zh %}{{ project.title_zh }}{% else %}{{ project.title_en }}{% endif %}</h3>
-      <p class="career-project-card__summary">{% if is_zh %}{{ project.summary_zh }}{% else %}{{ project.summary_en }}{% endif %}</p>
-      <ul class="career-tags">
-        {% for tech in project.stack %}<li>{{ tech }}</li>{% endfor %}
-      </ul>
-      <ol class="career-project-card__highlights">
-        {% if is_zh %}
-          {% for highlight in project.highlights_zh %}<li>{{ highlight }}</li>{% endfor %}
-        {% else %}
-          {% for highlight in project.highlights_en %}<li>{{ highlight }}</li>{% endfor %}
-        {% endif %}
-      </ol>
-      <div class="career-project-card__links">
-        {% if project.github %}<a href="{{ project.github }}" rel="noopener">{{ profile.labels.github }} ↗</a>{% endif %}
-        {% if project.site %}<a href="{{ project.site }}">{{ profile.labels.details }} →</a>{% endif %}
-        {% if include.source == 'cv' %}
-          <a href="{% if is_zh %}/projects/{% else %}/en/projects/{% endif %}#{{ project.key }}">{{ profile.labels.view_case }} →</a>
-        {% else %}
-          <a href="{% if is_zh %}/cv/{% else %}/en/cv/{% endif %}#{{ project.key }}">{% if is_zh %}简历中的项目说明{% else %}Project in CV{% endif %} →</a>
-        {% endif %}
-      </div>
-    </article>
-  {% endfor %}
-</div>
+{% for project in site.data.portfolio_projects %}
+<section id="{{ project.key }}">
+  <h2>{% if is_zh %}{{ project.title_zh }}{% else %}{{ project.title_en }}{% endif %}</h2>
+  <p><em>{% if is_zh %}{{ project.date_zh }}{% else %}{{ project.date_en }}{% endif %}</em></p>
+  <p>{% if is_zh %}{{ project.summary_zh }}{% else %}{{ project.summary_en }}{% endif %}</p>
+  <p><strong>{% if is_zh %}技术栈{% else %}Stack{% endif %}：</strong> {{ project.stack | join: " · " }}</p>
+
+  <h3>{% if is_zh %}项目亮点{% else %}Highlights{% endif %}</h3>
+  <ol>
+    {% if is_zh %}
+      {% for highlight in project.highlights_zh %}<li>{{ highlight }}</li>{% endfor %}
+    {% else %}
+      {% for highlight in project.highlights_en %}<li>{{ highlight }}</li>{% endfor %}
+    {% endif %}
+  </ol>
+
+  <p>
+    {% if project.github %}<a href="{{ project.github }}" class="btn btn--primary" rel="noopener">GitHub</a>{% endif %}
+    {% if project.site %}<a href="{{ project.site }}" class="btn">{{ profile.labels.details }}</a>{% endif %}
+    {% if include.source == 'cv' %}
+      <a href="{% if is_zh %}/projects/{% else %}/en/projects/{% endif %}#{{ project.key }}" class="btn">{{ profile.labels.view_case }}</a>
+    {% else %}
+      <a href="{% if is_zh %}/cv/{% else %}/en/cv/{% endif %}#{{ project.key }}" class="btn">{% if is_zh %}简历中的项目说明{% else %}Project in CV{% endif %}</a>
+    {% endif %}
+  </p>
+</section>
+
+{% unless forloop.last %}<hr>{% endunless %}
+{% endfor %}

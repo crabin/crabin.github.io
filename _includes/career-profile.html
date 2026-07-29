@@ -3,184 +3,111 @@
 {% assign is_zh = false %}
 {% if lang == 'zh' %}{% assign is_zh = true %}{% endif %}
 
-<header class="career-hero">
-  <div class="career-hero__topline">
-    <span class="career-kicker">{{ profile.identity.eyebrow }}</span>
-    <a class="career-language" href="{{ page.alternate_url }}" hreflang="{% if is_zh %}en{% else %}zh-CN{% endif %}">
-      {% if is_zh %}EN · English{% else %}中文 · ZH{% endif %}
-    </a>
-  </div>
+<p>
+  <a href="{{ page.alternate_url }}" class="btn btn--inverse">
+    {% if is_zh %}English Version{% else %}中文版本{% endif %}
+  </a>
+</p>
 
-  <div class="career-hero__grid">
-    <div class="career-hero__copy">
-      <p class="career-name"><span>{{ profile.identity.name }}</span><small>{{ profile.identity.native_name }}</small></p>
-      <h1>{{ profile.identity.headline }}</h1>
-      <p class="career-lede">{{ profile.identity.summary }}</p>
-      <div class="career-actions">
-        <a class="career-button career-button--primary" href="{% if is_zh %}/projects/{% else %}/en/projects/{% endif %}">{{ profile.identity.primary_cta }}</a>
-        {% if include.view == 'cv' %}
-          <a class="career-button career-button--secondary" href="/files/Li_Pengbin_AI_Agent_CV_zh.pdf">{{ profile.labels.download_cv }}</a>
-        {% else %}
-          <a class="career-button career-button--secondary" href="{% if is_zh %}/cv/{% else %}/en/cv/{% endif %}">{{ profile.identity.secondary_cta }}</a>
-        {% endif %}
-      </div>
-    </div>
+<p><strong>{{ profile.identity.eyebrow }}</strong></p>
 
-    <aside class="career-hero__aside" aria-label="Profile status">
-      <div class="career-orbit" aria-hidden="true">
-        <span>AGENT</span>
-        <span>RAG</span>
-        <span>SECURITY</span>
-      </div>
-      <dl class="career-status">
-        <div><dt>{% if is_zh %}所在地{% else %}Based in{% endif %}</dt><dd>{{ profile.identity.location }}</dd></div>
-        <div><dt>{% if is_zh %}当前状态{% else %}Current focus{% endif %}</dt><dd>{{ profile.identity.status }}</dd></div>
-        <div><dt>{% if is_zh %}核心关键词{% else %}Core stack{% endif %}</dt><dd>Python · Java · TypeScript · LangGraph · RAG</dd></div>
-      </dl>
-    </aside>
-  </div>
-</header>
+<p>{{ profile.identity.summary }}</p>
 
-<section class="career-section career-section--metrics" aria-labelledby="impact-heading">
-  <div class="career-section__heading">
-    <span>00</span>
-    <h2 id="impact-heading">{{ profile.labels.impact }}</h2>
-  </div>
-  <div class="career-metrics">
-    {% for metric in profile.metrics %}
-      <article class="career-metric">
-        <strong>{{ metric.value }}</strong>
-        <h3>{{ metric.label }}</h3>
-        <p>{{ metric.note }}</p>
-      </article>
-    {% endfor %}
-  </div>
-</section>
+<p>
+  <a href="{% if is_zh %}/projects/{% else %}/en/projects/{% endif %}" class="btn btn--primary">{{ profile.identity.primary_cta }}</a>
+  {% if include.view == 'cv' %}
+    <a href="/files/Li_Pengbin_AI_Agent_CV_zh.pdf" class="btn">{{ profile.labels.download_cv }}</a>
+  {% else %}
+    <a href="{% if is_zh %}/cv/{% else %}/en/cv/{% endif %}" class="btn">{{ profile.identity.secondary_cta }}</a>
+  {% endif %}
+  <a href="#contact" class="btn">{{ profile.labels.contact_me }}</a>
+</p>
 
-<section class="career-section" aria-labelledby="capabilities-heading">
-  <div class="career-section__heading">
-    <span>01</span>
-    <h2 id="capabilities-heading">{{ profile.labels.capabilities }}</h2>
-  </div>
-  <div class="career-capabilities">
-    {% for capability in profile.capabilities %}
-      <article class="career-capability">
-        <span class="career-capability__number">{{ capability.number }}</span>
-        <h3>{{ capability.title }}</h3>
-        <p>{{ capability.body }}</p>
-        <ul class="career-tags" aria-label="Technologies">
-          {% for tag in capability.tags %}<li>{{ tag }}</li>{% endfor %}
-        </ul>
-      </article>
-    {% endfor %}
-  </div>
-</section>
+<hr>
+
+<h2>{{ profile.labels.impact }}</h2>
+
+<ul>
+  {% for metric in profile.metrics %}
+    <li><strong>{{ metric.value }} · {{ metric.label }}</strong><br>{{ metric.note }}</li>
+  {% endfor %}
+</ul>
+
+<h2>{{ profile.labels.capabilities }}</h2>
+
+{% for capability in profile.capabilities %}
+<h3>{{ capability.number }} · {{ capability.title }}</h3>
+<p>{{ capability.body }}</p>
+<p><strong>{% if is_zh %}关键词{% else %}Keywords{% endif %}：</strong> {{ capability.tags | join: " · " }}</p>
+{% endfor %}
 
 {% unless include.view == 'cv' %}
-  <p class="career-more career-more--section"><a href="{% if is_zh %}/cv/{% else %}/en/cv/{% endif %}#skills-heading">{{ profile.labels.view_skills }} →</a></p>
+<p><a href="{% if is_zh %}/cv/{% else %}/en/cv/{% endif %}#skills-heading" class="btn">{{ profile.labels.view_skills }}</a></p>
 {% endunless %}
 
 {% if include.view == 'cv' %}
-<section class="career-section" aria-labelledby="skills-heading">
-  <div class="career-section__heading">
-    <span>02</span>
-    <h2 id="skills-heading">{{ profile.labels.skills }}</h2>
-  </div>
-  <div class="career-skill-grid">
-    {% for group in profile.skill_groups %}
-      <article class="career-skill-card">
-        <h3>{{ group.title }}</h3>
-        <ul>{% for item in group.items %}<li>{{ item }}</li>{% endfor %}</ul>
-      </article>
-    {% endfor %}
-  </div>
-</section>
+<h2 id="skills-heading">{{ profile.labels.skills }}</h2>
+
+{% for group in profile.skill_groups %}
+<h3>{{ group.title }}</h3>
+<ul>
+  {% for item in group.items %}<li>{{ item }}</li>{% endfor %}
+</ul>
+{% endfor %}
 {% endif %}
 
-<section class="career-section" aria-labelledby="projects-heading">
-  <div class="career-section__heading">
-    <span>{% if include.view == 'cv' %}03{% else %}02{% endif %}</span>
-    <div>
-      <h2 id="projects-heading">{{ profile.labels.projects }}</h2>
-      <p>{{ profile.labels.projects_intro }}</p>
-    </div>
-  </div>
-  <div class="career-projects career-projects--compact">
-    {% for project in site.data.portfolio_projects limit:4 %}
-      <article class="career-project-card">
-        <div class="career-project-card__meta">
-          <span>{% if is_zh %}{{ project.date_zh }}{% else %}{{ project.date_en }}{% endif %}</span>
-          <span>0{{ project.order }}</span>
-        </div>
-        <h3>{% if is_zh %}{{ project.title_zh }}{% else %}{{ project.title_en }}{% endif %}</h3>
-        <p>{% if is_zh %}{{ project.summary_zh }}{% else %}{{ project.summary_en }}{% endif %}</p>
-        <ul class="career-tags">
-          {% for tech in project.stack limit:5 %}<li>{{ tech }}</li>{% endfor %}
-        </ul>
-        <div class="career-project-card__links">
-          <a href="{% if is_zh %}/projects/{% else %}/en/projects/{% endif %}#{{ project.key }}">{{ profile.labels.view_case }} →</a>
-          {% if project.github %}<a href="{{ project.github }}" rel="noopener">{{ profile.labels.github }} ↗</a>{% endif %}
-        </div>
-      </article>
-    {% endfor %}
-  </div>
-  <p class="career-more"><a href="{% if is_zh %}/projects/{% else %}/en/projects/{% endif %}">{{ profile.labels.all_projects }} →</a></p>
-</section>
+<h2>{{ profile.labels.projects }}</h2>
+<p>{{ profile.labels.projects_intro }}</p>
 
-<section class="career-section career-section--timeline" aria-labelledby="experience-heading">
-  <div class="career-section__heading">
-    <span>{% if include.view == 'cv' %}04{% else %}03{% endif %}</span>
-    <h2 id="experience-heading">{{ profile.labels.experience }} · {{ profile.labels.education }}</h2>
-  </div>
-  <div class="career-timeline">
-    {% for item in profile.experience %}
-      <article class="career-timeline__item">
-        <div class="career-timeline__date">{{ item.date }}</div>
-        <div><span class="career-timeline__type">{{ profile.labels.experience }}</span><h3>{{ item.role }}</h3><h4>{{ item.company }}</h4><p>{{ item.summary }}</p></div>
-      </article>
-    {% endfor %}
-    {% for item in profile.education %}
-      <article class="career-timeline__item">
-        <div class="career-timeline__date">{{ item.date }}</div>
-        <div><span class="career-timeline__type">{{ profile.labels.education }}</span><h3>{{ item.degree }}</h3><h4>{{ item.school }}</h4><ul>{% for fact in item.facts %}<li>{{ fact }}</li>{% endfor %}</ul></div>
-      </article>
-    {% endfor %}
-  </div>
-</section>
+{% for project in site.data.portfolio_projects limit:4 %}
+<h3>{% if is_zh %}{{ project.title_zh }}{% else %}{{ project.title_en }}{% endif %}</h3>
+<p><em>{% if is_zh %}{{ project.date_zh }}{% else %}{{ project.date_en }}{% endif %}</em></p>
+<p>{% if is_zh %}{{ project.summary_zh }}{% else %}{{ project.summary_en }}{% endif %}</p>
+<p><strong>{% if is_zh %}技术栈{% else %}Stack{% endif %}：</strong> {{ project.stack | join: " · " }}</p>
+<p>
+  <a href="{% if is_zh %}/projects/{% else %}/en/projects/{% endif %}#{{ project.key }}" class="btn btn--primary">{{ profile.labels.view_case }}</a>
+  {% if project.github %}<a href="{{ project.github }}" class="btn" rel="noopener">GitHub</a>{% endif %}
+</p>
+{% endfor %}
+
+<p><a href="{% if is_zh %}/projects/{% else %}/en/projects/{% endif %}" class="btn">{{ profile.labels.all_projects }}</a></p>
+
+<h2>{{ profile.labels.experience }}</h2>
+{% for item in profile.experience %}
+<h3>{{ item.role }} · {{ item.company }}</h3>
+<p><em>{{ item.date }}</em></p>
+<p>{{ item.summary }}</p>
+{% endfor %}
+
+<h2>{{ profile.labels.education }}</h2>
+{% for item in profile.education %}
+<h3>{{ item.degree }} · {{ item.school }}</h3>
+<p><em>{{ item.date }}</em></p>
+<ul>{% for fact in item.facts %}<li>{{ fact }}</li>{% endfor %}</ul>
+{% endfor %}
 
 {% if include.view == 'cv' %}
-<section class="career-section" aria-labelledby="all-projects-heading">
-  <div class="career-section__heading">
-    <span>05</span>
-    <h2 id="all-projects-heading">{{ profile.labels.projects }} · {{ profile.labels.details }}</h2>
-  </div>
-  {% include project-portfolio.html detailed=true source="cv" %}
-</section>
+<h2>{{ profile.labels.projects }} · {{ profile.labels.details }}</h2>
+{% include project-portfolio.html source="cv" %}
 {% endif %}
 
-<section id="contact" class="career-section career-section--closing" aria-labelledby="statement-heading">
-  <div class="career-section__heading">
-    <span>{% if include.view == 'cv' %}06{% else %}04{% endif %}</span>
-    <h2 id="statement-heading">{{ profile.labels.statement }}</h2>
-  </div>
-  <div class="career-closing-grid">
-    <div class="career-statement">
-      {% for paragraph in profile.statement %}<p>{{ paragraph }}</p>{% endfor %}
-    </div>
-    <aside class="career-contact">
-      <span class="career-contact__label">{{ profile.labels.contact }}</span>
-      <a href="mailto:{{ profile.contact.email }}">{{ profile.contact.email }}</a>
-      <a href="{{ profile.contact.github }}" rel="noopener">github.com/crabin ↗</a>
-      <a href="{{ profile.contact.blog }}" rel="noopener">cnblogs.com/crabin ↗</a>
-      {% if include.view == 'cv' %}
-        <span>{{ profile.contact.phone_cn }}</span>
-        <span>{{ profile.contact.phone_jp }}</span>
-        <div class="career-source-cv">
-          <span>{{ profile.labels.source_cv }}</span>
-          <a href="/files/Li_Pengbin_AI_Agent_CV_zh.pdf">PDF</a>
-          <a href="/files/Li_Pengbin_AI_Agent_CV_zh.docx">DOCX</a>
-        </div>
-      {% endif %}
-    </aside>
-  </div>
-</section>
+<h2>{{ profile.labels.statement }}</h2>
+{% for paragraph in profile.statement %}<p>{{ paragraph }}</p>{% endfor %}
+
+<h2 id="contact">{{ profile.labels.contact }}</h2>
+<ul>
+  <li><strong>Email：</strong> <a href="mailto:{{ profile.contact.email }}">{{ profile.contact.email }}</a></li>
+  <li><strong>GitHub：</strong> <a href="{{ profile.contact.github }}" rel="noopener">github.com/crabin</a></li>
+  <li><strong>Blog：</strong> <a href="{{ profile.contact.blog }}" rel="noopener">cnblogs.com/crabin</a></li>
+  {% if include.view == 'cv' %}
+    <li><strong>{% if is_zh %}中国电话{% else %}China phone{% endif %}：</strong> {{ profile.contact.phone_cn }}</li>
+    <li><strong>{% if is_zh %}日本电话{% else %}Japan phone{% endif %}：</strong> {{ profile.contact.phone_jp }}</li>
+  {% endif %}
+</ul>
+
+{% if include.view == 'cv' %}
+<p>
+  <a href="/files/Li_Pengbin_AI_Agent_CV_zh.pdf" class="btn btn--primary">PDF</a>
+  <a href="/files/Li_Pengbin_AI_Agent_CV_zh.docx" class="btn">DOCX</a>
+</p>
+{% endif %}

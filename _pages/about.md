@@ -1,8 +1,9 @@
 ---
-layout: career
+layout: single
 permalink: /
-title: "李鹏斌 · AI Agent 开发工程师"
+title: "李鹏斌｜AI Agent 开发工程师"
 excerpt: "专注智能体系统、RAG 评测、网络安全与深度学习应用的 AI Agent 开发工程师。"
+author_profile: true
 lang: zh
 alternate_url: /en/
 redirect_from:
